@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konnnektus Pvt. Ltd. | Full-Service Marketing Agency</title>
+    <meta name="description" content="Konnnektus Pvt. Ltd. is a premium marketing agency delivering cutting-edge website design, PR, social media marketing, branding, and digital campaigns. Connect vision with impact.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-header" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo-link" aria-label="Konnnektus Home">
+                <img src="assets/logo.jpg" alt="Konnnektus Logo" class="nav-logo-img">
+                <span class="nav-logo-text">KONNNEKTUS</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#work" class="nav-link">Our Work</a></li>
+                    <li class="nav-item"><a href="#team" class="nav-link">Our Team</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li class="mobile-nav-item"><a href="#about" class="mobile-nav-link">About Us</a></li>
+            <li class="mobile-nav-item"><a href="#services" class="mobile-nav-link">Services</a></li>
+            <li class="mobile-nav-item"><a href="#work" class="mobile-nav-link">Our Work</a></li>
+            <li class="mobile-nav-item"><a href="#team" class="mobile-nav-link">Our Team</a></li>
+            <li class="mobile-nav-item"><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- HERO SECTION (Home) -->
+        <section id="home" class="hero-section text-center">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title animate-on-load" style="--order: 1;">
+                        Connecting Vision <br><span class="gold-gradient-text">With Impact.</span>
+                    </h1>
+                    <p class="hero-subtitle animate-on-load" style="--order: 2;">
+                        We build websites, engineer public relations, design stunning brands, and spark digital campaigns that propel your business forward.
+                    </p>
+                    <div class="hero-actions animate-on-load" style="--order: 3;">
+                        <a href="#contact" class="btn btn-primary magnetic" id="hero-cta">Let's Connect</a>
+                        <a href="#services" class="btn btn-secondary">Explore Services</a>
+                        
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-scroll-indicator animate-on-load" style="--order: 4;">
+                <span class="scroll-arrow"></span>
+            </div>
+        </section>
+
+        <!-- CLIENT LOGOS STRIP -->
+        <section class="clients-section">
+            <div class="marquee">
+                <div class="marquee-content">
+                    <span class="marquee-item">WORK WITH</span>
+                    <span class="marquee-item">KONNNEKTUS</span>
+                    <span class="marquee-item">DIGITAL MARKETING</span>
+                    <span class="marquee-item">WEBSITE DESIGNING</span>
+                    <span class="marquee-item">BUSINESS GROWTH</span>
+                    <span class="marquee-item">PUBLIC RELATIONS</span>
+                    <span class="marquee-item">CONTACT US</span>
+                    <span class="marquee-item">BUILD TOGETHER</span>
+                </div>
+                <!-- Duplicate for seamless looping -->
+                <div class="marquee-content" aria-hidden="true">
+                    <span class="marquee-item">WORK WITH</span>
+                    <span class="marquee-item">KONNNEKTUS</span>
+                    <span class="marquee-item">DIGITAL MARKETING</span>
+                    <span class="marquee-item">WEBSITE DESIGNING</span>
+                    <span class="marquee-item">BUSINESS GROWTH</span>
+                    <span class="marquee-item">PUBLIC RELATIONS</span>
+                    <span class="marquee-item">CONTACT US</span>
+                    <span class="marquee-item">BUILD TOGETHER</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US SECTION -->
+        <section id="about" class="about-section light-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-subtitle">A collective of creative minds dedicated to metallic-precision branding and strategy.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info">
+                        <h3 class="about-headline">We bridge the gap between creative ambition and commercial execution.</h3>
+                        <p class="about-text">
+                            At Konnnektus Pvt. Ltd., we believe that modern brands aren't just seen—they are felt. Inspired by the premium symmetry of a handshake, our agency was built on a simple foundation: connecting your strategic vision with tangible market impact. 
+                        </p>
+                        <p class="about-text">
+                            We don't settle for standard templates or predictable campaigns. Whether designing high-performance websites, navigating PR crises, establishing iconic brand identities, or launching multi-channel digital campaigns, we approach every challenge with meticulous attention to detail.
+                        </p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number">150+</span>
+                                <span class="stat-label">Projects Delivered</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">Client Retention</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Industry Awards</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="values-card-container">
+                            <div class="value-card">
+                                <div class="value-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                                </div>
+                                <h4 class="value-title">Meticulous Craft</h4>
+                                <p class="value-description">Exacting standards in code, design, and copy, mirroring the golden precision of our handshake identity.</p>
+                            </div>
+                            
+                            <div class="value-card">
+                                <div class="value-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11.08V12a6 6 0 1 1-3.61-5.48"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                </div>
+                                <h4 class="value-title">Strategic Connection</h4>
+                                <p class="value-description">Integrating PR, social, branding, and web design under a singular, unified marketing direction.</p>
+                            </div>
+
+                            <div class="value-card">
+                                <div class="value-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                </div>
+                                <h4 class="value-title">Impact-Driven</h4>
+                                <p class="value-description">Creative excellence backed by clean data, measurable conversions, and elevated market presence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="services-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Tailored digital and strategic solutions built to position your brand at the absolute forefront.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Web Card -->
+                    <div class="service-card">
+                        <div class="service-glow-border"></div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <h3 class="service-card-title">Web Design & Dev</h3>
+                        <p class="service-card-text">
+                            Custom, high-performance websites built with stunning aesthetics, fluid responsive layouts, and robust, clean architectures.
+                        </p>
+                        <span class="service-arrow-link">
+                            Learn more 
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </span>
+                    </div>
+
+                    <!-- PR Services -->
+                    <div class="service-card">
+                        <div class="service-glow-border"></div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                        </div>
+                        <h3 class="service-card-title">PR Services</h3>
+                        <p class="service-card-text">
+                            Strategic public relations, narrative design, media outreach, and reputation management that amplify your voice where it matters.
+                        </p>
+                        <span class="service-arrow-link">
+                            Learn more 
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </span>
+                    </div>
+
+                    <!-- Social Media Marketing -->
+                    <div class="service-card">
+                        <div class="service-glow-border"></div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                        </div>
+                        <h3 class="service-card-title">Social Media</h3>
+                        <p class="service-card-text">
+                            Data-backed social strategies, scroll-stopping content creation, and active community management that transforms followers into brand advocates.
+                        </p>
+                        <span class="service-arrow-link">
+                            Learn more 
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </span>
+                    </div>
+
+                    <!-- Branding -->
+                    <div class="service-card">
+                        <div class="service-glow-border"></div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <h3 class="service-card-title">Branding & Identity</h3>
+                        <p class="service-card-text">
+                            Crafting premium design languages, brand strategies, typography guidelines, and logo marks that represent confidence and longevity.
+                        </p>
+                        <span class="service-arrow-link">
+                            Learn more 
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </span>
+                    </div>
+
+                    <!-- Digital Campaigns -->
+                    <div class="service-card">
+                        <div class="service-glow-border"></div>
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                        </div>
+                        <h3 class="service-card-title">Digital Campaigns</h3>
+                        <p class="service-card-text">
+                            High-ROI performance campaigns, search engine optimization, and omni-channel advertising geared to capture market intent.
+                        </p>
+                        <span class="service-arrow-link">
+                            Learn more 
+                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR WORK SECTION -->
+        <section id="work" class="work-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="work-portfolio-label">Portfolio</span>
+                    <h2 class="section-title">Our Work</h2>
+                    <p class="section-subtitle">Real campaigns. Real impact. A glimpse into the stories we've helped shape.</p>
+                </div>
+                
+                <div class="work-project-card">
+                    <!-- Client Info Bar -->
+                    <div class="work-client-bar">
+                        <div class="work-client-info">
+                            <span class="work-client-icon">🤝</span>
+                            <div>
+                                <span class="work-client-label">CLIENT</span>
+                                <span class="work-client-name">School of Leadership (SoL)</span>
+                            </div>
+                        </div>
+                        <div class="work-service-tags">
+                            <span class="work-service-tag">Event Coverage</span>
+                            <span class="work-service-tag">Social Media</span>
+                            <span class="work-service-tag">PR</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Title -->
+                    <h3 class="work-project-title">Lead Forward Sindh — Youth Volunteerism Camp (Karachi Division)</h3>
+
+                    <!-- Photo Grid -->
+                    <div class="work-photo-grid">
+                        <div class="work-photo-main">
+                            <img src="assets/sol-event-main.png" alt="Lead Forward Sindh Opening Ceremony - packed auditorium" class="work-grid-img">
+                        </div>
+                        <div class="work-photo-small work-photo-sm1">
+                            <img src="assets/sol-event-speaker.png" alt="Chief Guest speaking at the event" class="work-grid-img">
+                        </div>
+                        <div class="work-photo-small work-photo-sm2">
+                            <img src="assets/sol-event-registration.png" alt="Volunteers at registration desk" class="work-grid-img">
+                        </div>
+                        <div class="work-photo-small work-photo-sm3">
+                            <img src="assets/sol-event-group.png" alt="Group photo of youth volunteers" class="work-grid-img">
+                        </div>
+                        <div class="work-photo-small work-photo-sm4">
+                            <img src="assets/sol-event-certificate.png" alt="Certificate distribution ceremony" class="work-grid-img">
+                        </div>
+                    </div>
+
+                    <!-- Caption -->
+                    <div class="work-caption">
+                        <p>Lead Forward Sindh – Youth Volunteerism Camp (Karachi Division) brought together 100 young volunteers from across the city for a powerful day of reflection, learning, and action centered on the true spirit of service.</p>
+                        <p>Under the vision of Honorable Minister Sardar Muhammad Bux Khan Mahar, this initiative by the Sports and Youth Affairs Department, Government of Sindh in collaboration with School of Leadership helped youth see volunteerism as leadership in action and translate their intent to serve into practical community impact.</p>
+                        <p>With over 500 applicants, 100 committed changemakers were selected for this experiential journey. Through dialogue, shared stories, and structured reflection, participants explored how meaningful change begins with individuals who choose to step forward for others. We were honored by the presence of Chief Guest Munawar Ali Mahesar, Secretary, Sports &amp; Youth Affairs Department, Government of Sindh. We also thank Hammad Tanveer, Chairman, Hammad Foundation, for briefly sharing his journey of service and purpose.</p>
+                        <p class="work-caption-italic">This is only the beginning. Lead Forward Sindh will continue across more divisions, creating more platforms for youth to come together, learn, and lead through volunteerism. Stay tuned!</p>
+                    </div>
+
+                    <!-- Hashtags -->
+                    <div class="work-hashtags">
+                        <span>#cultivatingdistinction</span>
+                        <span>#youthaffairssindh</span>
+                        <span>#youth</span>
+                        <span>#volunteer</span>
+                        <span>#learning</span>
+                    </div>
+
+                    <!-- Instagram Button -->
+                    <div class="work-instagram-btn-wrapper">
+                        <a href="https://www.instagram.com/p/DXzZnkHiP8J/" target="_blank" rel="noopener noreferrer" class="work-instagram-btn" id="instagram-post-link">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            View original post on Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR TEAM SECTION -->
+        <section id="team" class="team-section light-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Our Team</h2>
+                    <p class="section-subtitle">Meet the visionaries, designers, and strategists behind Konnnektus.</p>
+                </div>
+                
+                <div class="team-grid">
+                    <!-- Team 1 -->
+                    <div class="team-card">
+                        <div class="team-image-container">
+                            <img src="assets/ahmed-ashfaq.jpg" alt="Ahmed Ashfaq" class="team-placeholder-img">
+                            <div class="team-overlay">
+                                <p class="team-bio">Ahmed Ashfaq is the Chief Executive Officer (CEO) of Konnnektus Pvt. Ltd., a leading marketing, public relations, and strategic communications firm. With over 20 years of diverse professional experience, he has built a successful career spanning banking, telecommunications, public relations, entrepreneurship, and construction.<br><br>A former banker and PTCL professional, Ahmed later established himself as a telecom industry leader through his successful Jazz franchise operations. His expertise in strategic communications, brand management, media relations, digital marketing, and corporate communications has enabled him to lead impactful campaigns for businesses and organizations.<br><br>In addition to his corporate achievements, he is an entrepreneur, blogger, and founder of a construction firm, bringing a unique blend of business acumen, industry knowledge, and communication expertise. Under his leadership, Konnnektus Pvt. Ltd. is committed to delivering innovative marketing, PR, and digital communication solutions that help clients build strong brands and meaningful public engagement.</p>
+                                <div class="team-socials">
+                                    <a href="#" aria-label="LinkedIn" class="team-social-link">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Ahmed Ashfaq</h3>
+                            <p class="team-role">Chief Executive Officer (CEO)</p>
+                        </div>
+                    </div>
+
+                    <!-- Team 2 -->
+                    <div class="team-card">
+                        <div class="team-image-container">
+                            <div class="team-placeholder-img t2-gradient"></div>
+                            <div class="team-overlay">
+                                <p class="team-bio">"PR is about creating narratives that are impossible to ignore. Truth, well told."</p>
+                                <div class="team-socials">
+                                    <a href="#" aria-label="LinkedIn" class="team-social-link">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">&nbsp;</h3>
+                            <p class="team-role">&nbsp;</p>
+                        </div>
+                    </div>
+
+                    <!-- Team 3 -->
+                    <div class="team-card">
+                        <div class="team-image-container">
+                            <div class="team-placeholder-img t3-gradient"></div>
+                            <div class="team-overlay">
+                                <p class="team-bio">"A pixel-perfect design deserves clean, blazing-fast, and semantic code."</p>
+                                <div class="team-socials">
+                                    <a href="#" aria-label="LinkedIn" class="team-social-link">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">&nbsp;</h3>
+                            <p class="team-role">&nbsp;</p>
+                        </div>
+                    </div>
+
+                    <!-- Team 4 -->
+                    <div class="team-card">
+                        <div class="team-image-container">
+                            <img src="assets/syed-habib-ullah.jpg" alt="Syed Habib Ullah" class="team-placeholder-img">
+                            <div class="team-overlay">
+                                <p class="team-bio">Syed Habib Ullah serves as the Honorary Consultant at Konnnektus Pvt. Ltd. A seasoned public policy expert with over 20 years of experience, he is a Director at the Ministry of Youth Affairs & Sports, Government of Sindh. Throughout his career, he has played a key role in policy development, strategic planning, and governance, providing valuable guidance on public sector initiatives. His expertise and advisory leadership strengthen Konnnektus' commitment to delivering impactful public relations and strategic communication solutions</p>
+                                <div class="team-socials">
+                                    <a href="#" aria-label="LinkedIn" class="team-social-link">
+                                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Syed Habib Ullah</h3>
+                            <p class="team-role">Honorary Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">Let's connect your strategic goals with a premium, results-oriented execution.</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3 class="contact-heading">Let's start your project</h3>
+                        <p class="contact-text">
+                            Reach out today to discuss custom websites, public relations, social media, branding, or full digital marketing strategies. We'd love to connect.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div>
+                                    <p class="detail-label">Email Us</p>
+                                    <a href="mailto:hello@konnnektus.com" class="detail-link">Work@konnnektus.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div>
+                                    <p class="detail-label">Call Us</p>
+                                    <a href="tel:+18005550199" class="detail-link">+92 (301) 9282098</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div>
+                                    <p class="detail-label">Office</p>
+                                    <p class="detail-link">SHOP NO.2, AMBER PRIDE, SHAHRAH E FAISAL KARACHI</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-channels">
+                            <a href="#" aria-label="Twitter" class="social-link">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                            <a href="#" aria-label="Instagram" class="social-link">
+                                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <input type="text" id="form-name" class="form-control" placeholder=" " required>
+                                <label for="form-name" class="form-label">Your Name</label>
+                                <span class="form-border-line"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="form-email" class="form-control" placeholder=" " required>
+                                <label for="form-email" class="form-label">Email Address</label>
+                                <span class="form-border-line"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="form-message" class="form-control text-area" placeholder=" " required></textarea>
+                                <label for="form-message" class="form-label">Tell us about your project</label>
+                                <span class="form-border-line"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary magnetic w-100" id="form-submit">
+                                Send Message
+                            </button>
+                            
+                            <!-- Form Feedback -->
+                            <div id="form-success" class="form-feedback success">
+                                Thank you! Your message has been sent successfully. We will connect with you soon.
+                            </div>
+                            <div id="form-error" class="form-feedback error">
+                                Please fill in all fields with valid information.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER Section -->
+    <footer class="footer-section">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo-link">
+                    <img src="assets/logo.jpg" alt="Konnnektus Logo" class="footer-logo-img">
+                    <span class="footer-logo-text">KONNNEKTUS</span>
+                </a>
+                <p class="footer-description">
+                    Full-service branding, PR, web development, and digital marketing agency built for premium impact.
+                </p>
+            </div>
+            
+            <div class="footer-links-grid">
+                <div class="footer-nav-col">
+                    <h4 class="footer-col-title">Agency</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#work">Our Work</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-nav-col">
+                    <h4 class="footer-col-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">PR & Communications</a></li>
+                        <li><a href="#services">Social Marketing</a></li>
+                        <li><a href="#services">Branding & Logo Design</a></li>
+                        <li><a href="#services">Digital Ads</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p class="copyright-text">&copy; 2026 Konnnektus Pvt. Ltd. All rights reserved.</p>
+            <a href="#" class="legal-link">Made by <br>   KHWAJA SUHAIB AHMED  </a>
+            <div class="footer-legal-links">
+                <a href="#" class="legal-link">Privacy Policy</a>
+                <a href="#" class="legal-link">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
