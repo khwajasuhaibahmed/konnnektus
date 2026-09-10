@@ -34,7 +34,11 @@ The website focuses on clean UI, responsive layouts, visual storytelling, and an
 
 ## 📸 Screenshots
 
-Screenshots of the website will be added here.
+<img width="1918" height="916" alt="image" src="https://github.com/user-attachments/assets/ec49b6cc-0c09-4d38-9d55-4362f5ff06fa" />
+<img width="1919" height="910" alt="image" src="https://github.com/user-attachments/assets/45b5533d-5986-41d1-b661-3d3e9f4f93d9" />
+<img width="1920" height="922" alt="image" src="https://github.com/user-attachments/assets/f931f768-abf9-4931-9d17-bcf0a30039d2" />
+
+
 
 ## 🚀 Getting Started
 
