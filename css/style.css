@@ -1064,20 +1064,17 @@ section {
     background: linear-gradient(135deg, var(--color-bg-dark-deep) 0%, var(--color-gold-dark) 100%);
 }
 
-/* Sarah Ahmed - zoomed in, clean white background */
+/* Sarah Ahmed - clean white background portrait */
 .sarah-img-container {
     background-color: #ffffff !important;
 }
 .sarah-photo {
     object-fit: cover;
-    object-position: center 15%;
-    transform: scale(1.35);
-    transform-origin: center 20%;
+    object-position: center top;
     transition: var(--transition-smooth);
 }
 .team-card:hover .sarah-photo {
-    transform: scale(1.45);
-    transform-origin: center 20%;
+    transform: scale(1.05);
 }
 
 /* Hover Bio Overlay */
