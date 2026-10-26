@@ -506,6 +506,21 @@ section {
     margin: 0 auto;
 }
 
+.hero-eyebrow {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-gold-light);
+    padding: 0.5rem 1.25rem;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: var(--radius-full);
+    background: rgba(8, 30, 39, 0.45);
+    margin-bottom: var(--spacing-md);
+}
+
 .hero-title {
     font-size: 4.8rem;
     font-weight: 800;
@@ -576,6 +591,17 @@ section {
     overflow: hidden;
 }
 
+.clients-label {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--color-text-dark-muted);
+    margin-bottom: var(--spacing-sm);
+}
+
 .marquee {
     display: flex;
     width: 100%;
@@ -584,6 +610,7 @@ section {
 .marquee-content {
     display: flex;
     gap: var(--spacing-xl);
+    padding-right: var(--spacing-xl);
     flex-shrink: 0;
     min-width: 100%;
     justify-content: space-around;
@@ -596,9 +623,15 @@ section {
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 4px;
+    text-transform: uppercase;
     color: rgba(212, 175, 55, 0.35);
     white-space: nowrap;
     transition: var(--transition-fast);
+}
+
+.marquee-sep {
+    color: rgba(212, 175, 55, 0.35);
+    font-size: 0.8rem;
 }
 
 .marquee-item:hover {
@@ -705,85 +738,133 @@ section {
    -------------------------------------------------------------------------- */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: var(--spacing-lg);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
 }
 
 .service-card {
-    background-color: var(--color-bg-dark-light);
+    background: linear-gradient(160deg, rgba(22, 70, 86, 0.9) 0%, rgba(12, 43, 54, 0.9) 100%);
     padding: var(--spacing-lg);
-    border-radius: var(--radius-md);
-    border: 1px solid var(--color-border-dark);
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(212, 175, 55, 0.12);
     position: relative;
-    z-index: 1;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 320px;
-    box-shadow: var(--shadow-premium);
+    min-height: 380px;
     transition: var(--transition-smooth);
 }
 
-/* Gold glow borders on hover */
-.service-glow-border {
+/* Gold hairline that draws across the top on hover */
+.service-card::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: var(--radius-md);
-    border: 1.5px solid var(--color-gold);
-    opacity: 0;
-    z-index: -1;
-    transition: var(--transition-smooth);
-    box-shadow: var(--shadow-glow);
+    width: 0;
+    height: 2px;
+    background: var(--color-gold-gradient);
+    transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-premium), var(--shadow-glow);
+    transform: translateY(-4px);
+    border-color: rgba(212, 175, 55, 0.3);
+    box-shadow: var(--shadow-premium);
 }
 
-.service-card:hover .service-glow-border {
-    opacity: 1;
+.service-card:hover::before {
+    width: 100%;
+}
+
+.service-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-lg);
+}
+
+.service-number {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 3.25rem;
+    line-height: 1;
+    color: var(--color-gold);
+    opacity: 0.85;
 }
 
 .service-icon {
     color: var(--color-gold);
-    margin-bottom: var(--spacing-md);
-    background: rgba(212, 175, 55, 0.08);
-    width: 64px;
-    height: 64px;
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: var(--radius-md);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 50%;
+    transition: var(--transition-smooth);
+}
+
+.service-card:hover .service-icon {
+    background: var(--color-gold);
+    color: var(--color-bg-dark);
+    border-color: var(--color-gold);
 }
 
 .service-card-title {
-    font-size: 1.5rem;
-    margin-bottom: var(--spacing-xs);
-    font-weight: 700;
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin-bottom: 0.6rem;
 }
 
 .service-card-text {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     color: var(--color-text-dark-muted);
-    margin-bottom: var(--spacing-lg);
+    line-height: 1.65;
+    margin-bottom: var(--spacing-md);
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-lg);
     flex-grow: 1;
+}
+
+.service-list li {
+    font-size: 0.85rem;
+    color: var(--color-text-dark);
+    opacity: 0.85;
+    padding: 0.55rem 0;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.service-list li::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--color-gold);
+    flex-shrink: 0;
 }
 
 .service-arrow-link {
     font-family: var(--font-heading);
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     color: var(--color-gold);
     display: inline-flex;
     align-items: center;
     gap: var(--spacing-xs);
     margin-top: auto;
+    align-self: flex-start;
 }
 
 .service-arrow-link svg {
@@ -794,9 +875,38 @@ section {
     transform: translateX(6px);
 }
 
-.service-card:hover .service-arrow-link {
-    color: var(--color-copper);
+/* Closing call-to-action card */
+.service-card-cta {
+    background: transparent;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
 }
+
+.service-card-cta::before {
+    display: none;
+}
+
+.service-cta-eyebrow {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-text-dark-muted);
+}
+
+.service-cta-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
 
 /* --------------------------------------------------------------------------
    7.5. Our Work Section
@@ -824,6 +934,212 @@ section {
     border: 1px solid var(--color-border-dark);
     padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-xl);
     box-shadow: var(--shadow-premium);
+}
+
+.work-projects {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+/* Mockup Row - shared by logo/post and Instagram grid mockups */
+.work-mockup-row {
+    display: grid;
+    grid-template-columns: 0.9fr 2fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.work-mockup-row-ig {
+    grid-template-columns: 1fr 1fr;
+}
+
+.work-mockup-row-ig .ig-phone {
+    max-width: 440px;
+}
+
+.mockup-label {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--color-text-dark-muted);
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Logo presentation board */
+.logo-mockup-board {
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius-md);
+    border: 6px solid var(--color-bg-dark-light);
+    box-shadow: var(--shadow-premium);
+    overflow: hidden;
+}
+
+.logo-mockup-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.logo-mockup-board:hover .logo-mockup-img {
+    transform: scale(1.05);
+}
+
+/* Phone-framed social post mockups */
+.post-mockups {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+}
+
+.phone-mockup {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 8px solid #10161A;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: var(--shadow-premium);
+    transition: var(--transition-smooth);
+}
+
+.phone-mockup:nth-child(2) {
+    transform: translateY(-16px);
+}
+
+.phone-mockup:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-glow);
+}
+
+.phone-mockup:nth-child(2):hover {
+    transform: translateY(-24px);
+}
+
+.phone-post-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.9rem 0.6rem 0.5rem;
+}
+
+.phone-post-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #E4E6EB;
+    flex-shrink: 0;
+}
+
+.phone-post-name {
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #050505;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.phone-post-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background: #F0F2F5;
+}
+
+.phone-post-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0.4rem 0.8rem;
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: #65676B;
+    border-top: 1px solid #E4E6EB;
+}
+
+/* Instagram profile grid mockup */
+.ig-phone {
+    background: #FFFFFF;
+    border: 10px solid #10161A;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: var(--shadow-premium);
+    max-width: 380px;
+    width: 100%;
+    justify-self: center;
+}
+
+.ig-profile-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.2rem 1rem 0.9rem;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.ig-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    color: #FFFFFF;
+    background: linear-gradient(135deg, #8E2A8B 0%, #2B2F6B 100%);
+    box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px #C13584;
+}
+
+.ig-handle {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #262626;
+}
+
+.ig-tagline {
+    display: block;
+    font-size: 0.75rem;
+    color: #737373;
+}
+
+.ig-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.ig-grid a {
+    display: block;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #EFEFEF;
+}
+
+.ig-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+.ig-grid a:hover img {
+    transform: scale(1.06);
+    opacity: 0.85;
+}
+
+.work-caption-side {
+    margin-bottom: 0;
 }
 
 /* Client Info Bar */
@@ -1511,7 +1827,11 @@ body.loaded .animate-on-load {
         --spacing-xl: 3.5rem;
         --spacing-xxl: 5rem;
     }
-    
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .hero-title {
         font-size: 3.8rem;
     }
@@ -1540,11 +1860,29 @@ body.loaded .animate-on-load {
     .work-photo-sm2 { grid-row: 2; grid-column: 2; }
     .work-photo-sm3 { grid-row: 3; grid-column: 1; }
     .work-photo-sm4 { grid-row: 3; grid-column: 2; }
+
+    .work-mockup-row {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-mockup {
+        max-width: 320px;
+        width: 100%;
+        justify-self: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .nav-list {
         display: none; /* Collapsed under burger */
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        min-height: 0;
     }
     
     .mobile-toggle {
@@ -1608,5 +1946,16 @@ body.loaded .animate-on-load {
 
     .work-instagram-btn-wrapper {
         justify-content: center;
+    }
+
+    .post-mockups {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .phone-mockup:nth-child(2),
+    .phone-mockup:nth-child(2):hover {
+        transform: none;
     }
 }
